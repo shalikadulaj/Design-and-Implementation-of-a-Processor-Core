@@ -1,2 +1,2 @@
-# test1
-test1
+# Introduction
+The project involves the design and implementation of a processor core. This processor core is based on a specified processor architecture. The project aims to create a functional and efficient processor core that can execute instructions as per the defined architecture. The project design is focused on creating a 16-bit processor core, implementing its architecture using SystemVerilog, and generating a synthesized register-level model. Verification tasks involved simulating the core to ensure it correctly executed instructions according to the architecture's specifications. Gate-level implementation is used to optimize the design for area, speed, and power through logic synthesis. SystemVerilog is the primary hardware description language used for modeling the processor core. It is used to describe the behavior and structure of the core's components.
