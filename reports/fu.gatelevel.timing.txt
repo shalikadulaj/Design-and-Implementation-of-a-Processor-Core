@@ -1,0 +1,86 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fu
+Version: T-2022.03-SP5-1
+Date   : Sat Nov  4 19:10:52 2023
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32hvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: a_in[1] (input port)
+  Endpoint: z_out (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fu                 8000                  saed32hvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  a_in[1] (in)                             0.00       0.00 f
+  U194/Y (INVX0_HVT)                       0.05       0.05 r
+  U316/Y (AO22X1_HVT)                      0.13       0.18 r
+  U318/Y (NAND2X0_HVT)                     0.23       0.41 f
+  U319/Y (OAI22X1_HVT)                     0.15       0.56 r
+  U320/Y (AO221X1_HVT)                     0.09       0.65 r
+  U321/Y (NAND2X0_HVT)                     0.10       0.75 f
+  U322/Y (OAI21X1_HVT)                     0.13       0.89 r
+  intadd_0/U28/CO (FADDX1_HVT)             0.15       1.04 r
+  intadd_0/U27/CO (FADDX1_HVT)             0.14       1.18 r
+  intadd_0/U26/CO (FADDX1_HVT)             0.14       1.32 r
+  intadd_0/U25/CO (FADDX1_HVT)             0.14       1.45 r
+  intadd_0/U24/CO (FADDX1_HVT)             0.14       1.59 r
+  intadd_0/U23/CO (FADDX1_HVT)             0.14       1.73 r
+  intadd_0/U22/CO (FADDX1_HVT)             0.14       1.87 r
+  intadd_0/U21/CO (FADDX1_HVT)             0.14       2.01 r
+  intadd_0/U20/CO (FADDX1_HVT)             0.14       2.15 r
+  intadd_0/U19/CO (FADDX1_HVT)             0.14       2.29 r
+  intadd_0/U18/CO (FADDX1_HVT)             0.14       2.43 r
+  intadd_0/U17/CO (FADDX1_HVT)             0.14       2.57 r
+  intadd_0/U16/CO (FADDX1_HVT)             0.14       2.71 r
+  intadd_0/U15/CO (FADDX1_HVT)             0.14       2.85 r
+  intadd_0/U14/CO (FADDX1_HVT)             0.14       2.99 r
+  intadd_0/U13/CO (FADDX1_HVT)             0.14       3.13 r
+  intadd_0/U12/CO (FADDX1_HVT)             0.14       3.27 r
+  intadd_0/U11/CO (FADDX1_HVT)             0.14       3.41 r
+  intadd_0/U10/CO (FADDX1_HVT)             0.14       3.55 r
+  intadd_0/U9/CO (FADDX1_HVT)              0.14       3.69 r
+  intadd_0/U8/CO (FADDX1_HVT)              0.14       3.83 r
+  intadd_0/U7/CO (FADDX1_HVT)              0.14       3.97 r
+  intadd_0/U6/CO (FADDX1_HVT)              0.14       4.11 r
+  intadd_0/U5/CO (FADDX1_HVT)              0.14       4.24 r
+  intadd_0/U4/CO (FADDX1_HVT)              0.14       4.38 r
+  intadd_0/U3/CO (FADDX1_HVT)              0.14       4.52 r
+  intadd_0/U2/S (FADDX1_HVT)               0.19       4.72 f
+  U298/Y (NAND4X0_HVT)                     0.05       4.77 r
+  U300/Y (NOR4X0_HVT)                      0.12       4.89 f
+  U302/Y (NAND2X0_HVT)                     0.04       4.93 r
+  U303/Y (NAND3X0_HVT)                     0.30       5.23 f
+  U396/Y (AND2X1_HVT)                      0.16       5.39 f
+  U399/Y (AND2X1_HVT)                      0.08       5.47 f
+  U403/Y (NAND4X0_HVT)                     0.04       5.51 r
+  U404/Y (AO21X1_HVT)                      0.07       5.58 r
+  U798/Y (OR4X1_HVT)                       0.12       5.70 r
+  U799/Y (NOR4X0_HVT)                      0.10       5.80 f
+  U800/Y (AND4X1_HVT)                      0.08       5.88 f
+  z_out (out)                              0.00       5.88 f
+  data arrival time                                   5.88
+
+  max_delay                               11.00      11.00
+  output external delay                    0.00      11.00
+  data required time                                 11.00
+  -----------------------------------------------------------
+  data required time                                 11.00
+  data arrival time                                  -5.88
+  -----------------------------------------------------------
+  slack (MET)                                         5.12
+
+
+1

@@ -1,0 +1,52 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : clock qor
+        -type summary
+Design : mycpu
+Version: U-2022.12
+Date   : Mon Nov  6 14:10:24 2023
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+=================================================
+==== Summary Reporting for Corner FastCorner ====
+=================================================
+
+========================================================= Summary Table for Corner FastCorner ==========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: NormalMode, Scenario: NormalMode.FastCorner
+clk                                     M,D       180      5       10     50.32     50.32      0.13      0.10         0         0   1026.90
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        180      5       10     50.32     50.32      0.13      0.10         0         0   1026.90
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+=================================================
+==== Summary Reporting for Corner SlowCorner ====
+=================================================
+
+========================================================= Summary Table for Corner SlowCorner ==========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: NormalMode, Scenario: NormalMode.SlowCorner
+clk                                     M,D       180      5       10     50.32     50.32      0.29      0.23         0         0   1026.90
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        180      5       10     50.32     50.32      0.29      0.23         0         0   1026.90
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

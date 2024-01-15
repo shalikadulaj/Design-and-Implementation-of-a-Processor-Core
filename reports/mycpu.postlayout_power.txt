@@ -1,0 +1,82 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : mycpu
+Version: U-2022.12
+Date   : Mon Nov  6 14:10:23 2023
+****************************************
+Information: Activity propagation will be performed for scenario NormalMode.SlowCorner.
+Note - message 'POW-024' limit (10) exceeded. Remainder will be suppressed.
+Note - message 'POW-052' limit (10) exceeded. Remainder will be suppressed.
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Turn on parallel simulation of generator nets.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 7 ****
+Mode: NormalMode
+Corner: SlowCorner
+Scenario: NormalMode.SlowCorner
+Voltage: 0.95
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell IR_ir_r_reg_15_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.053902 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RSTB on cell IR_ir_r_reg_15_ for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002289 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell IR_ir_r_reg_15_ for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002613 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell IR_ir_r_reg_15_ for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002613 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell CU_st_r_reg_3_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.098534 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RSTB on cell CU_st_r_reg_3_ for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002270 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell CU_st_r_reg_3_ for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002594 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell CU_st_r_reg_3_ for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002594 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell CU_st_r_reg_1_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.072231 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RSTB on cell CU_st_r_reg_1_ for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002289 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x20000y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x24560y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x29120y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x33680y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x38240y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x42800y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x47360y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x51920y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x56480y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'xofiller!SHFILL3_HVT!x61040y20000', mismatches in operating condition settings have been found in the design. (POW-039)
+Note - message 'POW-039' limit (10) exceeded. Remainder will be suppressed.
+Warning: Rise-Fall toggles on pin ctmTdsLR_3_1763/Y are impossible given input states; converted to zero toggles. (POW-069)
+
+  Cell Internal Power    = 2.54e+08 pW ( 81.4%)
+  Net Switching Power    = 5.79e+07 pW ( 18.6%)
+Total Dynamic Power      = 3.12e+08 pW (100.0%)
+
+Cell Leakage Power       = 1.12e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             2.43e+08               4.30e+07               1.85e+06               2.88e+08    ( 68.0%)        i
+register                  1.68e+06               1.10e+06               2.44e+07               2.71e+07    (  6.4%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             8.96e+06               1.38e+07               8.58e+07               1.09e+08    ( 25.6%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     2.54e+08 pW            5.79e+07 pW            1.12e+08 pW            4.24e+08 pW
+1

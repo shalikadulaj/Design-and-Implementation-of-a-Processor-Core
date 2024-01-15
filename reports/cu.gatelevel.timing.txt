@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cu
+Version: T-2022.03-SP5-1
+Date   : Mon Nov  6 11:34:17 2023
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32hvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: st_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: st_r_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cu                 8000                  saed32hvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  st_r_reg[0]/CLK (DFFARX1_HVT)            0.00       0.00 r
+  st_r_reg[0]/Q (DFFARX1_HVT)              0.18       0.18 r
+  U94/Y (NOR4X0_HVT)                       0.18       0.36 f
+  U92/Y (INVX0_HVT)                        0.09       0.45 r
+  U116/Y (OR2X1_HVT)                       0.10       0.55 r
+  U93/Y (INVX0_HVT)                        0.07       0.63 f
+  st_r_reg[3]/D (DFFARX1_HVT)              0.02       0.65 f
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                   11.00      11.00
+  clock network delay (ideal)              0.00      11.00
+  st_r_reg[3]/CLK (DFFARX1_HVT)            0.00      11.00 r
+  library setup time                      -0.06      10.94
+  data required time                                 10.94
+  -----------------------------------------------------------
+  data required time                                 10.94
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                        10.29
+
+
+1
