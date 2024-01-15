@@ -1,5 +1,5 @@
 
-# Introduction
+# 1.Introduction
 
 The project involves the design and implementation of a processor core. This processor core is based on a specified processor architecture. The project aims to create a functional and efficient processor core that can execute instructions as per the defined architecture. The project design is focused on creating a 16-bit processor core, implementing its architecture using SystemVerilog, and generating a synthesized register-level model. Verification tasks involved simulating the core to ensure it correctly executed instructions according to the architecture's specifications. Gate- level implementation is used to optimize the design for area, speed, and power through logic synthesis. SystemVerilog is the primary hardware description language used for modeling the processor core. It is used to describe the behavior and structure of the core's components.
 
@@ -17,7 +17,7 @@ Based on the student number, the design requirements are set (clock period and X
 R0 = R0 + (R1 * R2). [Multiply-Accumulate].
 
 
-# Design of the control part of the mycpu CPU
+# 2.Design of the control part of the mycpu CPU
 
 ## 2.1. Instruction decoder implementation
 
@@ -50,7 +50,7 @@ The verification plan checks if the processor behaves correctly when it changes 
 assertions. Finally, opcode Test with XXL opcode (Multiply-Accumulate). In this test, verify the operation of the system that performs a multiply-accumulate operation: R0 = R0 + (R1 * R2). Inputs are configured with the XXL opcode. The expected output is calculated based on the operation R0 = R0 + (R1 * R2), and the system's response is compared to the expected result.
 
 
-# mycpu verification
+# 3.mycpu verification
 
 ## 3.1. RTL code check results
 
@@ -95,7 +95,7 @@ R0=R0+R15=1+6=7
 At the end of the simulation, R0 holds the value according to the equation “R0=R0+(R1*R2)”. It proves that the functionality of the system is successful.
 
 
-#  Implementation of the mycpu design
+#  4.Implementation of the mycpu design
 
 ## 4.1. Area results
 
